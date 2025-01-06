@@ -54,4 +54,4 @@ The application supports both **Graph Convolutional Network (GCN)-based models**
 
 Feel free to explore the code, make modifications, and contribute to improving this tool.
 
-For any questions or issues, please open an [issue](https://github.com/bhatnira/AChEI-PredApp.git/issues) in the repository.
+For any questions or issues, please open an [issue](https://github.com/bhatnira/AChEI-PredApp/issues) in the repository.
