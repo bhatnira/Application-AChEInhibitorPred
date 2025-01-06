@@ -1,8 +1,26 @@
-# AChE Inhibitor Activity Prediction Web Application
 
-This Streamlit-based web application, developed as part of this dissertation, enables users to predict the activity and potency of compounds as potential **AChE inhibitors**. The app leverages advanced machine learning models to provide predictions, hosting the best-performing models derived from different variants. Users can draw molecules directly on the Canvas to generate predictions. All input data is cleaned and standardized before predictions are made. Additionally, the application supports local **LIME** interpretation for GCN-based models and atomic contribution mapping/visualization for descriptor/fingerprint-based models.
+# AChE Inhibitor Activity and Potency Prediction Web Application
 
-To use the application locally, follow the steps below:
+This Streamlit web application, developed as part of this dissertation, allows users to predict the activity and potency of compounds as potential **AChE inhibitors** (see Figure 26). The application hosts the best models derived from each variant and provides various input options. Users can input individual SMILES strings, structure data files (SDF), or even a list of SMILES from an Excel file. Additionally, users have the option to interactively draw molecules on the Canvas to generate predictions. All inputs are cleaned and standardized using RDKit modules, ensuring consistency before any predictions are made.
+
+The application supports **LIME interpretation** and **atomic contribution mapping** for model interpretability. Specifically:
+- **LIME** interpretation is available for models based on **RDKit features** and **AutoML TPOT**.
+- **Atomic contribution mapping and visualization** are supported for models that utilize **Graph Convolutional Networks (GCN)**.
+
+## Key Features:
+- **Four Modules**: The main application hosts four distinct modules, each corresponding to the best model from a different variant. Each module is designed to handle:
+  - Individual SMILES strings.
+  - Structure data files (SDF).
+  - Lists of SMILES in an Excel file.
+  - Interactive structure drawing for activity and potency predictions.
+  
+- **Data Processing**: The raw SMILES strings and other input formats are cleaned and standardized using RDKit to ensure accurate and consistent data processing.
+
+- **Model Interpretability**: 
+  - **LIME interpretation** is available for the RDKit feature-based models derived from **AutoML (TPOT)** and **aggregate modeling**.
+  - **Atomic contribution mapping** and visualization are supported for **GCN-based models**, providing insights into how different atoms contribute to the model's predictions.
+
+This tool is designed to assist researchers and practitioners in the field of drug discovery, specifically for compounds aimed at inhibiting AChE, by offering an interactive and transparent way to predict and interpret the biological activity and potency of various compounds.
 
 1. **Clone the Repository**  
 Clone the repository to your local machine using the following command:
