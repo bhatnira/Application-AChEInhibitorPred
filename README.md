@@ -1,7 +1,7 @@
 
 # AChE Inhibitor Activity and Potency Prediction Web Application
 
-This Streamlit web application, developed as part of this dissertation, allows users to predict the activity and potency of compounds as potential **AChE inhibitors** (see Figure 26). The application hosts the best models derived from each variant and provides various input options. Users can input individual SMILES strings, structure data files (SDF), or even a list of SMILES from an Excel file. Additionally, users have the option to interactively draw molecules on the Canvas to generate predictions. All inputs are cleaned and standardized using RDKit modules, ensuring consistency before any predictions are made.
+This Streamlit web application, developed as part of this dissertation, allows users to predict the activity and potency of compounds as potential **AChE inhibitors**. The application hosts the best models derived from each variant and provides various input options. Users can input individual SMILES strings, structure data files (SDF), or even a list of SMILES from an Excel file. Additionally, users have the option to interactively draw molecules on the Canvas to generate predictions. All inputs are cleaned and standardized using RDKit modules, ensuring consistency before any predictions are made.
 
 The application supports **LIME interpretation** and **atomic contribution mapping** for model interpretability. Specifically:
 - **LIME** interpretation is available for models based on **RDKit features** and **AutoML TPOT**.
